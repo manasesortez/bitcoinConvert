@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.amtodev.bitcoinconvert">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_bitcoin"
+        android:label="Covertir Bitcoin"
+        android:roundIcon="@mipmap/ic_launcher_bitcoin_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BitcoinConvert"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/bitcoinOne">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bitcoinConvert"
+            android:exported="true"
+            android:theme="@style/bitcoinTwo"/>
+    </application>
+
+</manifest>
